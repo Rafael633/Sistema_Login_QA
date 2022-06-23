@@ -52,13 +52,13 @@ namespace Senac.Tests
         [DataTestMethod]        
         [DataRow("")]        
         [DataRow(null)]        
-        [DataRow(" ")]        
+        [DataRow("")]        
         public void VerificarNome_RetornoFalso(string value)
         {            
             Usuario usuario = new Usuario();            
             var resultado = usuario.VerificarNome(value);     
 
-            Assert.IsFalse(false);        
+            Assert.IsFalse(resultado);        
         }
     }
 }
